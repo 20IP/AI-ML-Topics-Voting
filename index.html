@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI/ML Topics Voting</title>
 <style>
-  @import url('https://script.google.com/macros/s/AKfycbyUGwozOfbhEXHzHLXwLbjs9cYijmQNQcuIF4k7LDtHKUhyYWZfOSr-KVpnTsWbcEjC/exec');
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
 
   :root {
     --bg: #0f1117;
@@ -453,12 +453,12 @@
 
   <header>
     <div class="eyebrow">FPT Fsoft · AI/ML Research</div>
-    <h1>Vote chủ đề bài giảng</h1>
-    <p class="subtitle">Chọn 1 bài mỗi nhóm — kết quả hiển thị công khai theo thời gian thực.</p>
+    <h1>Vote chủ đề bạn muốn</h1>
+    <p class="subtitle">Bạn chỉ được phép chọn mỗi nhóm 1 chủ đề.</p>
     <div class="rule-bar">
-      <div class="rule"><div class="rule-dot"></div>Mỗi nhóm chọn đúng 1 bài</div>
+      <div class="rule"><div class="rule-dot"></div>Mỗi nhóm chọn đúng 1 chủ đề</div>
       <div class="rule"><div class="rule-dot"></div>Tên người vote hiển thị công khai</div>
-      <div class="rule"><div class="rule-dot"></div>Bài nhiều vote nhất sẽ được giảng</div>
+      <div class="rule"><div class="rule-dot"></div>Nhóm các bài nhiều vote nhất sẽ được trình bày với mọi người</div>
     </div>
   </header>
 
@@ -581,7 +581,7 @@
         <div class="card-content">
           <div class="topic-num">CV · 01</div>
           <div class="topic-name">CNN architecture deep dive</div>
-          <div class="topic-desc">Backprop qua conv layers từ đầu, không skip toán. Tại sao BatchNorm hoạt động, skip connection trong ResNet giải quyết gì. Transfer learning — khi nào freeze, khi nào fine-tune toàn bộ. Augmentation strategy ảnh hưởng đến generalization như thế nào.</div>
+          <div class="topic-desc">Backprop qua conv layers từ đầu. Tại sao BatchNorm hoạt động, skip connection trong ResNet giải quyết gì. Transfer learning — khi nào freeze, khi nào fine-tune toàn bộ. Augmentation strategy ảnh hưởng đến generalization như thế nào.</div>
           <div class="tags">
             <span class="tag">Backprop qua conv</span>
             <span class="tag">Receptive field</span>
@@ -600,7 +600,7 @@
         <div class="card-content">
           <div class="topic-num">CV · 02</div>
           <div class="topic-name">Object detection architecture internals</div>
-          <div class="topic-desc">Không dừng ở "chạy YOLO". Hiểu anchor-free vs anchor-based, tại sao FPN cần thiết, loss function nào phù hợp cho bài toán nào. YOLO evolution từ v1 đến v11 — mỗi version giải quyết gì. DETR: khi Transformer thay thế hoàn toàn anchor.</div>
+          <div class="topic-desc">Hiểu anchor-free vs anchor-based, tại sao FPN cần thiết, loss function nào phù hợp cho bài toán nào. DETR: khi Transformer thay thế hoàn toàn anchor.</div>
           <div class="tags">
             <span class="tag">Anchor-free vs anchor-based</span>
             <span class="tag">Feature Pyramid Network</span>
@@ -619,9 +619,9 @@
         <div class="card-content">
           <div class="topic-num">CV · 03</div>
           <div class="topic-name">Image segmentation fundamentals</div>
-          <div class="topic-desc">Encoder-decoder design, tại sao dilated convolution cần thiết cho dense prediction. Phân biệt semantic / instance / panoptic và khi nào dùng cái nào. Đánh giá đúng với metric phù hợp: IoU, Dice score, Pixel accuracy — mỗi cái đo gì khác nhau.</div>
+          <div class="topic-desc">Encoder-decoder design, đánh giá đúng với metric phù hợp: IoU, Dice score, Pixel accuracy.</div>
           <div class="tags">
-            <span class="tag">Encoder-decoder (U-Net)</span>
+            <span class="tag">Encoder-decoder</span>
             <span class="tag">Dilated convolution</span>
             <span class="tag">Semantic vs instance vs panoptic</span>
             <span class="tag">IoU / Dice score</span>
@@ -637,7 +637,7 @@
         <div class="card-content">
           <div class="topic-num">CV · 04</div>
           <div class="topic-name">Từ CNN đến Vision Transformer (ViT)</div>
-          <div class="topic-desc">Inductive bias của CNN là gì và tại sao Transformer có thể thay thế. Patch embedding, class token, positional embedding trong ảnh. Swin Transformer giải quyết bài toán scale như thế nào. Mở rộng sang foundation models: CLIP (vision-language), DINOv2 (self-supervised), SAM (promptable segmentation).</div>
+          <div class="topic-desc">Patch embedding, class token, positional embedding trong ảnh. Swin Transformer giải quyết bài toán scale như thế nào.</div>
           <div class="tags">
             <span class="tag">Patch embedding</span>
             <span class="tag">ViT architecture</span>
@@ -748,7 +748,7 @@
 <div class="toast" id="toast"></div>
 
 <script>
-const SCRIPT_URL = 'https://script.google.com/macros/s/YOUR_APPS_SCRIPT_ID/exec';
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyUGwozOfbhEXHzHLXwLbjs9cYijmQNQcuIF4k7LDtHKUhyYWZfOSr-KVpnTsWbcEjC/exec';
 
 const selections = { ml: null, cv: null, llm: null };
 
